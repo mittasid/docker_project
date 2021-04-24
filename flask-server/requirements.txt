@@ -1,0 +1,5 @@
+Flask==1.1.1
+mysql-connector-python==8.0.19
+Flask-Cors==3.0.8
+requests
+click

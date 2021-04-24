@@ -1,0 +1,23 @@
+version: '3'
+services:
+  httpd-server:
+    image: http-server
+    restart: always
+    build:
+      context: httpd-server
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - flask-server
+
+  flask-server:
+    image: flask-server
+    restart: always
+    build:
+      context: flask-server
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+
+

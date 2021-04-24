@@ -1,0 +1,9 @@
+/*Modify bootstrap*/
+.navbar-inverse .navbar-brand{
+    color: white;
+}
+
+movieInfo_filter.dataTables_filter{
+    padding: 10px
+
+}
