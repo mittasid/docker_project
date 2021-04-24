@@ -3,7 +3,9 @@ from flask import Flask, jsonify
 import requests
 from flask_cors import CORS, cross_origin
 import click
+import os
 
+api_key=os.getenv("API_KEY")
 CORS_URL="*"
 app = Flask(__name__)
 cors = CORS(app)
